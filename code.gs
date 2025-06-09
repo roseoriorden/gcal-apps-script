@@ -20,7 +20,7 @@ function main() {
   const daysInWeek = 7
   // set event time start as 7am EST
   thisMonday.setHours(eventTime)
-  for (let week = 1; thisMonday.getFullYear() < 2026; week++) {
+  for (let week = 1; thisMonday.getFullYear() < year + 1; week++) {
     // set event end time as 8am (one hour long event)
     var endTime = new Date(thisMonday.getTime() + 60*60*1000)
     console.log("Creating calendar event <Week " + week + "> on: " + thisMonday + ", ending at: ", endTime)
